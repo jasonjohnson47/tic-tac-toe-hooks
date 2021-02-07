@@ -1,13 +1,78 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin:20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,
+input {
+    /*font-family: "Lucida Console", Monaco, monospace;*/
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.125rem;
+}
+
+ol,
+ul {
+    padding-left: 30px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.game-board {
+    width:102px;
+    margin: 0 auto 10px auto;
+}
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+}
+
+.game-info {
+    text-align: center;
+}
+.status {
+    margin-bottom: 10px;
+}
+.history-current-step {
+    margin-left:.5em;
+    margin-right:.5em;
+    display: block;
+    line-height: 2.375rem;
+}
+.history-nav {
+    display: flex;
+    justify-content: center;
+}
+.history-nav button svg {
+    width:.75rem;
+    height:2rem;
+    display:block;
 }
